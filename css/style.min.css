@@ -806,16 +806,18 @@ h2 {
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.02em;
-    color: #1f1f1f;
+    color: #1F1F1F;
     margin-top: 35px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: initial; }
   .loginform input {
     border: none;
     border-bottom: 2px solid #1f1f1f;
     min-width: 360px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
+    background: transparent; }
   .loginform input:active,
   .loginform input:focus {
     border-bottom: 2px solid #16b296; }
@@ -835,6 +837,10 @@ h2 {
     border: none;
     cursor: pointer;
     margin-top: 40px; }
+
+input:active,
+input:focus {
+  background: transparent; }
 
 .regform {
   padding: 5px 65px 25px; }

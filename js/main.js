@@ -351,13 +351,10 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
-                items: 1,
+            1200: {
+                items: 2,
                 nav: false,
-                margin: 50
-            },
-            2000: {
-                items: 2
+                margin: 25
             }
         }
     })
@@ -377,13 +374,10 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
-                items: 1,
+            1200: {
+                items: 2,
                 nav: false,
-                margin: 50
-            },
-            2000: {
-                items: 2
+                margin: 25
             }
         }
     })
