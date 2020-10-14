@@ -387,6 +387,8 @@ h2 {
                 transform: translateY(-120px); }
 
 .image-carousel {
+  max-width: 2000px;
+  margin: 0 auto;
   margin-top: -60px;
   margin-bottom: 60px; }
   .image-carousel .carousel-wrap {
@@ -1245,7 +1247,9 @@ input:focus {
     background-size: 740px 711px; }
   .parallax2 {
     right: -91px;
-    width: 1630px; } }
+    width: 1630px; }
+  .image-carousel .carousel-wrap {
+    padding: 0; } }
 
 @media (max-width: 1764px) {
   .parallax1 {

@@ -338,11 +338,10 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#owl-first').owlCarousel({
         margin: 25,
-        item: 2,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 2500,
         autoplayHoverPause: true,
         slideTransition: 'linear',
         nav: false,
@@ -352,19 +351,22 @@ $(document).ready(function () {
                 items: 1
             },
             1200: {
-                items: 2,
-                nav: false,
+                item: 2,
                 margin: 25
-            }
+            },
+            1750: {
+                item: 3,
+                margin: 25
+            },
         }
     })
     $('#owl-second').owlCarousel({
         margin: 25,
-        item: 2,
+        item: 3,
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplaySpeed: 3500,
+        autoplaySpeed: 2500,
         autoplayHoverPause: true,
         slideTransition: 'linear',
         nav: false,
@@ -375,10 +377,13 @@ $(document).ready(function () {
                 items: 1
             },
             1200: {
-                items: 2,
-                nav: false,
+                item: 2,
                 margin: 25
-            }
+            },
+            1750: {
+                item: 2,
+                margin: 25
+            },
         }
     })
 });
@@ -386,7 +391,7 @@ $(document).ready(function () {
 
 
 
-
+//открытие изображений
 $(".owl-carousel img").click(function(){
     $("#full-image").attr("src", $(this).attr("src"));
     $('#image-viewer').show();
