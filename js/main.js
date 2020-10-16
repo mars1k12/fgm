@@ -348,7 +348,7 @@ $(document).ready(function () {
         dots: false,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             1200: {
                 item: 2,
@@ -374,14 +374,14 @@ $(document).ready(function () {
         dots: false,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             1200: {
                 item: 2,
                 margin: 25
             },
             1750: {
-                item: 2,
+                item: 3,
                 margin: 25
             },
         }
