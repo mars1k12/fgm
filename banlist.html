@@ -231,35 +231,37 @@
     БЛОК ВХОДА В СИСТЕМУ
 
  -->
-    <div class="login-block form-block">
-        <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
-        <form class="loginform form-all" id="loginform">
-            <div class="form-group">
-                <label for="login">Ваш логин</label>
-                <input type="text" name="login">
-            </div>
-            <div class="form-group">
-                <label for="password">Ваш пароль</label>
-                <input type="password" name="password">
-            </div>
-            <button type="submit" class="btn btn-login">Войти</button>
-        </form>
-
-        <button class="reg-link">Регистрация</button>
-
-        <div class="forgot-block">
-            <p>Забыли пароль от аккаунта?</p>
-            <a href="">Восстановите доступ</a>
+ <div class="login-block form-block">
+    <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
+    <form class="loginform form-all" id="loginform">
+        <div class="form-group">   
+            <label class="sss" for="login">Ваш логин</label>             
+            <input type="text" name="login" placeholder="ShepardS">
+            
         </div>
-
-        <div class="close-form">
-            <p>+</p>
+        <div class="form-group">     
+            <label for="password">Ваш пароль</label>           
+            <input type="password" name="password" placeholder="Password">
+            
         </div>
+        <button type="submit" class="btn btn-login">Войти</button>
+    </form>
+
+    <button class="reg-link">Регистрация</button>
+
+    <div class="forgot-block">
+        <p>Забыли пароль от аккаунта?</p>
+        <a class="recovery-link">Восстановите доступ</a>
     </div>
 
+    <div class="close-form">
+        <p>+</p>
+    </div>
+</div>
 
 
-    <!-- 
+
+<!-- 
 
 БЛОК РЕГИСТРАЦИИ
 
@@ -269,22 +271,22 @@
     <form class="regform form-all" id="regform">
         <div class="form-group">
             <label for="login">Ваш логин</label>
-            <input type="text" name="login">
+            <input type="text" name="login" placeholder="ShepardS">
         </div>
 
         <div class="form-group">
             <label for="email">Электронная почта</label>
-            <input type="email" name="email">
+            <input type="email" name="email"  placeholder="example@example.com">
         </div>
 
         <div class="form-group">
             <label for="password">Ваш пароль</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" placeholder="Password">
         </div>
 
         <div class="form-group">
             <label for="password2">Подтвердите пароль</label>
-            <input type="password" name="password2">
+            <input type="password" name="password2" placeholder="Password">
         </div>
 
         <div class="form-group">
@@ -304,6 +306,7 @@
         <p>+</p>
     </div>
 </div>
+
 
 
 

@@ -129,7 +129,7 @@ $(document).ready(function () {
             },
             "password2": {
                 required: "Введите пароль",
-                equalTo:"Пароли не совпадают"
+                equalTo: "Пароли не совпадают"
             },
             "agree-chk": {
                 required: "Нет согласия"
@@ -370,7 +370,7 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         slideTransition: 'linear',
         nav: false,
-        rtl:true,
+        rtl: true,
         dots: false,
         responsive: {
             0: {
@@ -387,16 +387,24 @@ $(document).ready(function () {
         }
     })
 });
-
+var Swipes = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 400,
+    spaceBetween: 25,
+    slidesPerView:3,
+    loop: true,
+    centeredSlides: true,
+    autoplay: true,
+});
 
 
 
 //открытие изображений
-$(".owl-carousel img").click(function(){
+$(".owl-carousel img").click(function () {
     $("#full-image").attr("src", $(this).attr("src"));
     $('#image-viewer').show();
-  });
-  
-  $("#image-viewer .close").click(function(){
+});
+
+$("#image-viewer .close").click(function () {
     $('#image-viewer').hide();
-  });
+});

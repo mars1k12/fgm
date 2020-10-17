@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Личный кабинет</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -256,80 +257,81 @@
     БЛОК ВХОДА В СИСТЕМУ
 
  -->
-    <div class="login-block form-block">
-        <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
-        <form class="loginform form-all" id="loginform">
-            <div class="form-group">
-                <label for="login">Ваш логин</label>
-                <input type="text" name="login">
-            </div>
-            <div class="form-group">
-                <label for="password">Ваш пароль</label>
-                <input type="password" name="password">
-            </div>
-            <button type="submit" class="btn btn-login">Войти</button>
-        </form>
-
-        <button class="reg-link">Регистрация</button>
-
-        <div class="forgot-block">
-            <p>Забыли пароль от аккаунта?</p>
-            <a href="">Восстановите доступ</a>
+ <div class="login-block form-block">
+    <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
+    <form class="loginform form-all" id="loginform">
+        <div class="form-group">   
+            <label class="sss" for="login">Ваш логин</label>             
+            <input type="text" name="login" placeholder="ShepardS">
+            
         </div>
-
-        <div class="close-form">
-            <p>+</p>
+        <div class="form-group">     
+            <label for="password">Ваш пароль</label>           
+            <input type="password" name="password" placeholder="Password">
+            
         </div>
+        <button type="submit" class="btn btn-login">Войти</button>
+    </form>
+
+    <button class="reg-link">Регистрация</button>
+
+    <div class="forgot-block">
+        <p>Забыли пароль от аккаунта?</p>
+        <a class="recovery-link">Восстановите доступ</a>
     </div>
 
+    <div class="close-form">
+        <p>+</p>
+    </div>
+</div>
 
 
-    <!-- 
+
+<!-- 
 
 БЛОК РЕГИСТРАЦИИ
 
 -->
-    <div class="reg-block form-block ">
-        <h5>РЕГИСТРАЦИЯ АККАУНТА</h5>
-        <form class="regform form-all" id="regform">
-            <div class="form-group">
-                <label for="login">Ваш логин</label>
-                <input type="text" name="login">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Электронная почта</label>
-                <input type="email" name="email">
-            </div>
-
-            <div class="form-group">
-                <label for="password">Ваш пароль</label>
-                <input type="password" name="password" id="password">
-            </div>
-
-            <div class="form-group">
-                <label for="password2">Подтвердите пароль</label>
-                <input type="password" name="password2">
-            </div>
-
-            <div class="form-group">
-                <input class="custom-checkbox" type="checkbox" id="agree-chk" name="agree-chk">
-                <label class="custom-checkbox-label" for="agree-chk">Я соглашаюсь с условиями</label>
-            </div>
-
-            <button type="submit" class="btn btn-reg">Зарегистрироваться</button>
-        </form>
-
-        <div class="forgot-block">
-            <p>Уже проходили регистрацию на сайте?</p>
-            <button class="login-link2">Зайдите в личный кабинет</button>
+<div class="reg-block form-block ">
+    <h5>РЕГИСТРАЦИЯ АККАУНТА</h5>
+    <form class="regform form-all" id="regform">
+        <div class="form-group">
+            <label for="login">Ваш логин</label>
+            <input type="text" name="login" placeholder="ShepardS">
         </div>
 
-        <div class="close-form">
-            <p>+</p>
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="email" name="email"  placeholder="example@example.com">
         </div>
+
+        <div class="form-group">
+            <label for="password">Ваш пароль</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+            <label for="password2">Подтвердите пароль</label>
+            <input type="password" name="password2" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+            <input class="custom-checkbox" type="checkbox" id="agree-chk" name="agree-chk">
+            <label class="custom-checkbox-label" for="agree-chk">Я соглашаюсь с условиями</label>
+        </div>
+
+        <button type="submit" class="btn btn-reg">Зарегистрироваться</button>
+    </form>
+
+    <div class="forgot-block">
+        <p>Уже проходили регистрацию на сайте?</p>
+        <button class="login-link2">Зайдите в личный кабинет</button>
     </div>
 
+    <div class="close-form">
+        <p>+</p>
+    </div>
+</div>
 
 
     <!-- 
@@ -341,8 +343,8 @@
         <h5>Восстановление доступа</h5>
         <form class="recoveryform form-all" id="recoveryform">
             <div class="form-group">
-                <label for="email5">Элекстронная почта аккаунта</label>
-                <input type="email" name="email5">
+                <label for="email5">Электронная почта аккаунта</label>
+                <input type="email" name="email5"  placeholder="example@example.com">
             </div>
 
             <button type="submit" class="btn btn-recovery">Восстановить пароль</button>
@@ -387,12 +389,12 @@
         <form class="form-all" id="depositform">
             <div class="form-group">
                 <label for="promocode">Введите сумму</label>
-                <input type="number" min="1" id="sum" name="sum" pattern="[0-9]">
+                <input type="number" min="1" id="sum" name="sum" pattern="[0-9]"  placeholder="500 RUB">
             </div>
 
             <div class="form-group">
                 <label for="login">Введите промокод</label>
-                <input type="text" id="promocode" name="promocode">
+                <input type="text" id="promocode" name="promocode" placeholder="promocode">
                 <span class="norequired">Необязательно</span>
             </div>
 
@@ -464,17 +466,17 @@
         <form class="changemailform form-all" id="changemailform">
             <div class="form-group">
                 <label for="email1">Старая почта</label>
-                <input type="email" name="email1">
+                <input type="email" name="email1" placeholder="example@example.com">
             </div>
 
             <div class="form-group">
                 <label for="email2">Новая почта</label>
-                <input type="email" name="email2" id="email2">
+                <input type="email" name="email2" id="email2" placeholder="example@example.com">
             </div>
 
             <div class="form-group">
                 <label for="email3">Повторите новую почту</label>
-                <input type="email" name="email3">
+                <input type="email" name="email3" placeholder="example@example.com">
             </div>
             <button type="submit" class="btn ">Сохранить изменения</button>
         </form>
@@ -496,7 +498,7 @@
         <form class="changpassform2 form-all" id="changemailform2">
             <div class="form-group">
                 <label for="pass-code">Введите код подтверждения</label>
-                <input type="text" name="pass-code">
+                <input type="text" name="pass-code" placeholder="code">
             </div>
             <button type="submit" class="btn">Подтвердить</button>
         </form>
@@ -517,17 +519,17 @@
         <form class="changepassform form-all" id="changepassform">
             <div class="form-group">
                 <label for="password1">Старый пароль</label>
-                <input type="password" name="password1">
+                <input type="password" name="password1" placeholder="Password">
             </div>
 
             <div class="form-group">
                 <label for="password2">Новый пароль</label>
-                <input type="password" name="password2" id="password2">
+                <input type="password" name="password2" id="password2" placeholder="Password">
             </div>
 
             <div class="form-group">
                 <label for="password3">Повторите новый пароль</label>
-                <input type="password" name="password3">
+                <input type="password" name="password3" placeholder="Password">
             </div>
 
             <button type="submit" class="btn change-pass-confirm">Сохранить изменения</button>
@@ -550,7 +552,7 @@
         <form class="changepassform2 form-all" id="changepassform2">
             <div class="form-group">
                 <label for="pass-code">Введите код подтверждения</label>
-                <input type="text" id="pass-code" name="pass-code">
+                <input type="text" id="pass-code" name="pass-code" placeholder="code">
             </div>
             <button type="submit" class="btn">Подтвердить</button>
         </form>
