@@ -408,3 +408,14 @@ $(".owl-carousel img").click(function () {
 $("#image-viewer .close").click(function () {
     $('#image-viewer').hide();
 });
+
+
+
+
+
+
+$('.icon').click(function() {
+    $(this).toggleClass('active');
+    $('.header-right').toggleClass('active-burger');
+    $('body').toggleClass('overflow-hidden');
+  })
