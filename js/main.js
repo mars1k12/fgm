@@ -387,15 +387,7 @@ $(document).ready(function () {
         }
     })
 });
-var Swipes = new Swiper('.swiper-container', {
-    loop: true,
-    speed: 400,
-    spaceBetween: 25,
-    slidesPerView:3,
-    loop: true,
-    centeredSlides: true,
-    autoplay: true,
-});
+
 
 
 
@@ -418,4 +410,4 @@ $('.icon').click(function() {
     $(this).toggleClass('active');
     $('.header-right').toggleClass('active-burger');
     $('body').toggleClass('overflow-hidden');
-  })
+})
