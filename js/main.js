@@ -65,12 +65,18 @@ $('.bg-overlay').on('click', function () {
     $('.form-block').removeClass('active');
     $('.bg-overlay').removeClass('active');
     $('body').removeClass('overflow-hidden');
+    $('.form-all').trigger("reset");
+    $("label.error").hide();
+    $(".error").removeClass("error");
 });
 //Закрытие модальных окон входа, регистрации, покупки
 $('.close-form').on('click', function () {
     $('.form-block').removeClass('active');
     $('.bg-overlay').removeClass('active');
     $('body').removeClass('overflow-hidden');
+    $('.form-all').trigger("reset");
+    $("label.error").hide();
+    $(".error").removeClass("error");
 });
 
 
