@@ -1821,26 +1821,27 @@ input:focus {
   .data-event {
     margin-top: 100px;
     margin-bottom: 40px; }
-  .event-block {
-    overflow-x: scroll; }
-    .event-block h1 {
-      font-size: 24px;
-      line-height: 28px; }
-    .event-block .event-block-inner {
-      margin-top: 15px;
-      grid-template-columns: none;
-      gap: 0; }
-    .event-block .event-block-inner-item {
-      margin-right: 15px; }
-    .event-block .event-block-inner-item .txt-block h6 {
-      font-size: 18px;
-      line-height: 18px; }
-    .event-block .event-block-inner-item .txt-block p {
-      font-size: 15px;
-      line-height: 16px; }
-    .event-block .event-block-inner-item .txt-block {
-      opacity: 1;
-      bottom: -58%; }
+  .event-block h1 {
+    font-size: 24px;
+    line-height: 28px; }
+  .event-block .event-block-inner {
+    margin-top: 15px;
+    grid-template-columns: auto;
+    gap: 0;
+    overflow-x: scroll;
+    overflow-y: hidden; }
+  .event-block .event-block-inner-item {
+    margin-right: 15px;
+    grid-row-start: 1; }
+  .event-block .event-block-inner-item .txt-block h6 {
+    font-size: 18px;
+    line-height: 18px; }
+  .event-block .event-block-inner-item .txt-block p {
+    font-size: 15px;
+    line-height: 16px; }
+  .event-block .event-block-inner-item .txt-block {
+    opacity: 1;
+    bottom: -58%; }
   .event-block-inner-item {
     height: 172px;
     width: 344px;
@@ -1884,7 +1885,3 @@ input:focus {
     top: 515px; }
   .download-block > h5 {
     padding-right: 65px; } }
-
-.swiper-container {
-  width: 100%;
-  display: none; }
