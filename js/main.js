@@ -341,7 +341,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 5500,
         autoplayHoverPause: true,
         slideTransition: 'linear',
         nav: false,
@@ -390,9 +390,8 @@ $(document).ready(function () {
 
 
 
-
 //открытие изображений
-$(".owl-carousel img").click(function () {
+$(".carousel-cell img").click(function () {
     $("#full-image").attr("src", $(this).attr("src"));
     $('#image-viewer').show();
 });
@@ -400,9 +399,9 @@ $(".owl-carousel img").click(function () {
 $("#image-viewer .close").click(function () {
     $('#image-viewer').hide();
 });
-
-
-
+$("#image-viewer").click(function () {
+    $('#image-viewer').hide();
+});
 
 
 
@@ -411,3 +410,104 @@ $('.icon').click(function() {
     $('.header-right').toggleClass('active-burger');
     $('body').toggleClass('overflow-hidden');
 })
+
+
+
+
+
+
+let tickerSpeed = 1;
+
+let flickity = null;
+let isPaused = false;
+let flickity2 = null;
+let isPaused2 = false;
+const slideshowEl2 = document.querySelector('.js-slideshow2');
+const slideshowEl = document.querySelector('.js-slideshow');
+
+
+const update = () => {
+  if (isPaused) return;
+  if (flickity.slides) {
+    flickity.x = (flickity.x - tickerSpeed) % flickity.slideableWidth;
+    flickity.selectedIndex = flickity.dragEndRestingSelect();
+    flickity.updateSelectedSlide();
+    flickity.settle(flickity.x);
+  }
+  window.requestAnimationFrame(update);
+};
+const update2 = () => {
+    if (isPaused2) return;
+    if (flickity2.slides) {
+      flickity2.x = (flickity2.x - tickerSpeed) % flickity2.slideableWidth;
+      flickity2.selectedIndex = flickity2.dragEndRestingSelect();
+      flickity2.updateSelectedSlide();
+      flickity2.settle(flickity2.x);
+    }
+    window.requestAnimationFrame(update2);
+  };
+
+const pause = () => {
+  isPaused = true;
+};
+const pause2 = () => {
+    isPaused2 = true;
+  };
+
+const play = () => {
+  if (isPaused) {
+    isPaused = false;
+    window.requestAnimationFrame(update);
+  }
+};
+const play2 = () => {
+    if (isPaused2) {
+      isPaused2 = false;
+      window.requestAnimationFrame(update2);
+    }
+  };
+
+flickity = new Flickity(slideshowEl, {
+  autoPlay: false,
+  prevNextButtons: false,
+  pageDots: false,
+  draggable: true,
+  wrapAround: true,
+  selectedAttraction: 0.015,
+  friction: 0.25
+});
+flickity.x = 0;
+
+flickity2 = new Flickity(slideshowEl2, {
+    autoPlay: false,
+    prevNextButtons: false,
+    pageDots: false,
+    draggable: true,
+    wrapAround: true,
+    selectedAttraction: 0.015,
+    rightToLeft: true,
+    friction: 0.25
+  });
+  flickity2.x = 0;
+
+slideshowEl.addEventListener('mouseenter', pause, false);
+slideshowEl.addEventListener('focusin', pause, false);
+slideshowEl.addEventListener('mouseleave', play, false);
+slideshowEl.addEventListener('focusout', play, false);
+slideshowEl2.addEventListener('mouseenter', pause2, false);
+slideshowEl2.addEventListener('focusin', pause2, false);
+slideshowEl2.addEventListener('mouseleave', play2, false);
+slideshowEl2.addEventListener('focusout', play2, false);
+
+flickity.on('dragStart', () => {
+  isPaused = true;
+});
+
+
+flickity2.on('dragStart', () => {
+    isPaused2 = true;
+  });
+
+update();
+update2();
+
