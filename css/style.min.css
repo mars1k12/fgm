@@ -1673,6 +1673,8 @@ input:focus {
       border-radius: 4px;
       margin-top: 12px; }
   .form-block {
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: fixed;
     top: 0;
     left: 0;
