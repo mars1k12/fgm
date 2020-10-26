@@ -75,7 +75,7 @@
 
                         <a href="#" class="account-link">Аккаунт</a>
                         <div class="arrow-down">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            <svg class="arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.25 14.6499L17.6499 10.1499" stroke="white" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -413,10 +413,6 @@
 
 
 
-
-
-
-
     <!-- 
 
     БЛОК СКАЧИВАНИЯ ПРИ НАЛИЧИИ ДОСТУПА
@@ -425,7 +421,15 @@
     <div class="download-block form-block">
         <h5>Отправьтесь в незабываемое<br>
             путешествие в своей жизни.</h5>
-
+         
+        <h6>Выберите издание</h6>
+        <div class="select">
+        <select name="slct" id="slct">
+            <option value="1">DELUXE EDITION</option>
+            <option value="2">DELUXE EDITION22222</option>
+            <option value="3">DELUXE EDITION333333</option>
+          </select>
+        </div>
         <p>Текст-рыба Текст-рыба Текст-рыба
             Текст-рыба Текст-рыба Текст-рыба
             Текст-рыба Текст-рыба Текст-рыба
@@ -441,6 +445,9 @@
     </div>
 
 
+
+
+    
     <!-- 
 
     БЛОК СКАЧИВАНИЯ БЕЗ НАЛИЧИЯ ДОСТУПА
@@ -636,7 +643,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous">
 </script>
 <script src="js/main.js"></script>
-
+    <script src="js/nice-select.min.js"></script>
 </body>
 
 </html>

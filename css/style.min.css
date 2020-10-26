@@ -1241,6 +1241,170 @@ input:focus {
     width: 100%;
     padding: 28px 237px 28px 24px;
     display: block; }
+  .download-block h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 20px 25px 2px; }
+  .download-block .select {
+    display: block; }
+    .download-block .select .nice-select {
+      -webkit-tap-highlight-color: transparent;
+      background: rgba(22, 178, 150, 0.24);
+      border-radius: 3px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      clear: both;
+      cursor: pointer;
+      display: block;
+      margin-left: 24px;
+      font-family: Europe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #ffffff;
+      height: 42px;
+      outline: none;
+      padding-top: 8px;
+      padding-left: 18px;
+      padding-right: 30px;
+      position: relative;
+      text-align: left !important;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      white-space: nowrap;
+      max-width: 360px;
+      z-index: 4; }
+    .download-block .select .nice-select:hover {
+      border-color: #dbdbdb; }
+    .download-block .select .nice-select:active,
+    .download-block .select .nice-select.open,
+    .download-block .select .nice-select:focus {
+      border-color: #999; }
+    .download-block .select .nice-select:after {
+      border-bottom: 2px solid #fff;
+      border-right: 2px solid #fff;
+      content: "";
+      display: block;
+      height: 5px;
+      margin-top: -4px;
+      pointer-events: none;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      -webkit-transform-origin: 66% 66%;
+      -ms-transform-origin: 66% 66%;
+      transform-origin: 66% 66%;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transition: all 0.15s ease-in-out;
+      -o-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      width: 5px; }
+    .download-block .select .nice-select.open:after {
+      -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      transform: rotate(-135deg); }
+    .download-block .select .nice-select.open .list {
+      opacity: 1;
+      pointer-events: auto;
+      -webkit-transform: scale(1) translateY(0);
+      -ms-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0); }
+    .download-block .select .nice-select.disabled {
+      border-color: #ededed;
+      color: #999;
+      pointer-events: none; }
+    .download-block .select .nice-select.disabled:after {
+      border-color: #cccccc; }
+    .download-block .select .nice-select.wide {
+      width: 100%; }
+    .download-block .select .nice-select.wide .list {
+      left: 0 !important;
+      right: 0 !important; }
+    .download-block .select .nice-select.right {
+      float: right; }
+    .download-block .select .nice-select.right .list {
+      left: auto;
+      right: 0; }
+    .download-block .select .nice-select.small {
+      font-size: 12px;
+      height: 36px;
+      line-height: 34px; }
+    .download-block .select .nice-select.small:after {
+      height: 4px;
+      width: 4px; }
+    .download-block .select .nice-select.small .option {
+      line-height: 34px;
+      min-height: 34px; }
+    .download-block .select .nice-select .list {
+      background: #FFFFFF;
+      font-family: Europe;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #000000;
+      border-radius: 0px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-transform: scale(0.75) translateY(-21px);
+      -ms-transform: scale(0.75) translateY(-21px);
+      transform: scale(0.75) translateY(-21px);
+      -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+      -o-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+      transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+      z-index: 9; }
+    .download-block .select .nice-select .option {
+      cursor: pointer;
+      font-weight: 400;
+      line-height: 40px;
+      list-style: none;
+      min-height: 40px;
+      outline: none;
+      padding-left: 18px;
+      padding-right: 29px;
+      text-align: left;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+    .download-block .select .nice-select .option:hover,
+    .download-block .select .nice-select .option.focus {
+      background: #DADADA; }
+    .download-block .select .nice-select .option.selected.focus {
+      background: #16B296; }
+    .download-block .select .nice-select .option.selected {
+      color: #FFFFFF; }
+    .download-block .select .nice-select .option.disabled {
+      background-color: transparent;
+      color: #999;
+      cursor: default; }
+    .download-block .select .no-csspointerevents .nice-select .list {
+      display: none; }
+    .download-block .select .no-csspointerevents .nice-select.open .list {
+      display: block; }
   .download-block p {
     font-weight: normal;
     font-size: 16px;
@@ -1345,30 +1509,20 @@ input:focus {
     margin-left: 30px;
     cursor: pointer; }
 
-@media (max-width: 2265px) {
-  .parallax1 {
-    right: -289px; } }
-
-@media (max-width: 2115px) {
-  .parallax1 {
-    right: -183px;
-    top: -200px;
-    height: 1020px;
-    width: 1144px;
-    background-size: 763px 737px; } }
-
-@media (max-width: 1904px) {
+@media (max-width: 2500px) {
   .parallax1 {
     right: -71px;
     top: -200px;
     height: 1020px;
     width: 997px;
     background-size: 740px 711px; }
-  .parallax2 {
-    right: -91px;
-    width: 1630px; }
   .image-carousel .carousel-wrap {
     padding: 0; } }
+
+@media (max-width: 1974px) {
+  .parallax2 {
+    right: 0px;
+    width: 1500px; } }
 
 @media (max-width: 1764px) {
   .parallax1 {
@@ -1376,11 +1530,6 @@ input:focus {
     height: 1020px;
     width: 828px;
     background-size: 698px 659px; } }
-
-@media (max-width: 1904px) {
-  .parallax2 {
-    right: 0px;
-    width: 1500px; } }
 
 @media (max-width: 1755px) {
   .parallax2 {
@@ -1888,7 +2037,11 @@ input:focus {
       .recovery .recovery-pass-block .form-all .form-group label.error {
         color: red;
         bottom: -31px;
-        position: absolute; } }
+        position: absolute; }
+  .download-block .select .nice-select {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 @media (max-width: 590px) {
   .fgm-dark-bg {

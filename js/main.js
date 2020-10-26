@@ -90,13 +90,29 @@ $('.close-success-change').on('click', function () {
 
 
 
+jQuery(function ($) {
+        $(document).mouseup(function (e) {
+            if (!$(".drop-list").is(e.target) && !$(".arrow-down").is(e.target)  && !$(".account-link").is(e.target) && $('.drop-list').hasClass("active")) {
+                $('.drop-list').removeClass('active');
+                $('.arrow-down').removeClass('turnover');
+            }
+        });
+});
+
 $('.account').on('click', function () {
+        $('.drop-list').toggleClass('active');
+        $('.arrow-down').toggleClass('turnover');
+});
+$('.arrow-down"').on('click', function () {
     $('.drop-list').toggleClass('active');
     $('.arrow-down').toggleClass('turnover');
 });
 
 
 
+$(document).ready(function() {
+    $('#slct').niceSelect();
+  });
 
 
 
@@ -340,60 +356,6 @@ $(document).ready(function () {
 
 
 
-//carousel
-$(document).ready(function () {
-    $('#owl-first').owlCarousel({
-        margin: 25,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplaySpeed: 5500,
-        autoplayHoverPause: true,
-        slideTransition: 'linear',
-        nav: false,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            1200: {
-                item: 2,
-                margin: 25
-            },
-            1750: {
-                item: 3,
-                margin: 25
-            },
-        }
-    })
-    $('#owl-second').owlCarousel({
-        margin: 25,
-        item: 3,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplaySpeed: 2500,
-        autoplayHoverPause: true,
-        slideTransition: 'linear',
-        nav: false,
-        rtl: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            1200: {
-                item: 2,
-                margin: 25
-            },
-            1750: {
-                item: 3,
-                margin: 25
-            },
-        }
-    })
-});
-
 
 
 //открытие изображений
@@ -516,4 +478,5 @@ flickity2.on('dragStart', () => {
 
 update();
 update2();
+
 
