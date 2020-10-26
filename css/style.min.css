@@ -1633,6 +1633,8 @@ input:focus {
     display: block; }
   .account svg {
     display: none; }
+  .account svg.arrow-down {
+    display: none; }
   .account .account-link {
     display: none; }
   .account .drop-list {
