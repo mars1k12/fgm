@@ -103,7 +103,7 @@ $('.account').on('click', function () {
         $('.drop-list').toggleClass('active');
         $('.arrow-down').toggleClass('turnover');
 });
-$('.arrow-down"').on('click', function () {
+$('.arrow-down').on('click', function () {
     $('.drop-list').toggleClass('active');
     $('.arrow-down').toggleClass('turnover');
 });

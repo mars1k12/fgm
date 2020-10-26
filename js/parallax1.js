@@ -31,15 +31,3 @@
     }
 })();
 
-
-flickity.x = 0;
-
-slideshowEl2.addEventListener('mouseenter', pause, false);
-slideshowEl2.addEventListener('focusin', pause, false);
-slideshowEl2.addEventListener('mouseleave', play, false);
-slideshowEl2.addEventListener('focusout', play, false);
-
-flickity.on('dragStart', () => {
-  isPaused = true;
-});
-update();
